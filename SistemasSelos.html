@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Selos</title>
+    
+    <!-- Linkando o seu arquivo de estilo -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Painel de Selos e Missões</h1>
+        
+        <!-- Área de Cadastro -->
+        <div class="controle-cadastro">
+            <input type="text" id="nomeAluno" placeholder="Nome do aluno (Ex: Helena, Heitor...)">
+            <button onclick="adicionarAluno()">Adicionar na Turma</button>
+        </div>
+
+        <!-- Dashboard: É aqui dentro que o JavaScript vai desenhar os até 40 alunos e os 28 slots -->
+        <div id="dashboard" class="dashboard-grid">
+            <!-- Os cards gerados pelo script.js aparecerão aqui automaticamente -->
+        </div>
+
+        <!-- Botão de Reset Mensal -->
+        <div class="area-reset">
+            <button class="btn-danger" onclick="encerrarMes()">Encerrar Mês (Zerar Sistema)</button>
+        </div>
+    </div>
+
+    <!-- Linkando o seu arquivo de lógica no final do body -->
+    <script src="script.js"></script>
+</body>
+</html>

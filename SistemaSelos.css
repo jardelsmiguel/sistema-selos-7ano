@@ -1,0 +1,20 @@
+.slots-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); /* 7 colunas */
+    gap: 5px;
+    margin-top: 15px;
+}
+
+.slot {
+    aspect-ratio: 1 / 1; /* Mantém os slots sempre quadrados perfeitos */
+    background: #1A1A1D;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.slot:hover {
+    background: #4a00e0; /* Brilha em roxo ao passar o mouse */
+    border-color: #fff;
+}
